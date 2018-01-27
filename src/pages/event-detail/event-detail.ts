@@ -20,7 +20,11 @@ export class EventDetailPage {
 
   event: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public eventProvider: EventProvider,
+  ) {
   }
 
   ionViewDidLoad() {
